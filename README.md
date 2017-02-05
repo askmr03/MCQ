@@ -10,11 +10,7 @@
 <li> Task 2      : Extract the file content </li>
 <br>
 <ul> Solution 2  : REGEX pattern that match each question and aswer into a specified varaible </ul>
-<br>
-<li> Task 3    : Extract the file content </li>
-<br>
-<ul> Solution : REGEX pattern that match each question and answer using POJO </ul>
-<li> Task 4    : Web interface for the task </li>
+<br><li> Task 3    : Web interface for the above task </li>
 <br>
 <ul> Solution : JAVA EE Technology comes in using FACELET, HTML and CORE, F:AJAX Tag libraries </ul>
 ......
