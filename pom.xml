@@ -1,25 +1,28 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <artifactId>jsf</artifactId>
-        <groupId>org.glassfish.javaeetutorial</groupId>
-        <version>7.0.5</version>
-    </parent>
-    
-    <groupId>org.glassfish.javaeetutorial</groupId>
-    <artifactId>My-ExamApp</artifactId>
-    <version>7.0.5</version>
-    <packaging>war</packaging>
-
-	<dependencies>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-scratchpad</artifactId>
-            <version>3.2-FINAL</version>
-        </dependency>
-    </dependencies>
-
+	 <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>2.3</version>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals><goal>copy</goal></goals>
+                    <configuration>
+                        <artifactItems>
+                            <artifactItem>
+                                <groupId>org.glassfish.javaeetutorial</groupId>
+                                <artifactId>My-ExamApp</artifactId>
+                                <version>7.0.5</version>
+                                <destFileName>webapp-runner.jar</destFileName>
+                            </artifactItem>
+                        </artifactItems>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
 	
-    <name>${project.artifactId}</name>
+	
+  
 </project>
