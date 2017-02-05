@@ -6,7 +6,7 @@ import javax.enterprise.context.RequestScoped;
 
 public class User
 {
-	private String name , password, namePattern="[0-9]{5}[a-zA-Z]{2}" , passwordPattern="[a-zA-Z]{3,10}[0-9]{2}";
+	private String name , password, namePattern = "[0-9]{5}[a-zA-Z]{2}" , passwordPattern = "[a-zA-Z]{3,10}[0-9]{2}";
 	
 	public String getName()
 	{
@@ -19,12 +19,12 @@ public class User
 	
 	public void setName( String newName )
 	{
-		this.name = password;
+		this.name  =  password;
 	}
 	
 	public void setPassword( String newPassword )
 	{
-		this.password = newPassword;
+		this.password  =  newPassword;
 	}
 	
 	public String getNamePattern()

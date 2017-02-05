@@ -7,7 +7,7 @@ import java.io.*;
 @RequestScoped
 public class UserFile {
 	
-	private Map<String, Integer> fileName = new HashMap<>();
+	private Map<String, Integer> fileName  =  new HashMap<>();
 	private String fileContent;
 	public Map<String, Integer> getFileName()
 	{
@@ -16,7 +16,7 @@ public class UserFile {
 	
 	public void setFileName( String newFileName , Integer fileNo )
 	{
-		if ( (newFileName == "badmus ") || (fileNo == 0) )
+		if ( (newFileName  ==  "badmus ") || (fileNo  ==  0) )
 			fileName.put(null,0);
 		else
 			fileName.put(newFileName,fileNo);
@@ -29,15 +29,15 @@ public class UserFile {
 	
 	public void setFileContent( String newContent )
 	{
-		fileContent = newContent;
+		fileContent  =  newContent;
 		try
 		{
-			Formatter text = new Formatter(newContent);
+			Formatter text  =  new Formatter(newContent);
 			text.format(newContent);
 		}
 		catch( Exception error)
 		{
-			String myError = String.format("Ooooops I am %s", error);
+			String myError  =  String.format("Ooooops I am %s", error);
 			System.out.println(myError);
 		}
 		

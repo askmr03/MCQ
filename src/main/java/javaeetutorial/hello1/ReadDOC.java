@@ -1,34 +1,28 @@
 package javaeetutorial.hello1;
-
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.net.URISyntaxException;
 import org.apache.poi.hwpf.HWPFDocument;
 import org.apache.poi.hwpf.extractor.WordExtractor;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
 import java.io.*;
-import java.util.Scanner;
-import java.util.regex.*;
-import java.util.*;
-public class App
-{
-    private static String dataSource = "uoe2015.doc", bbb , regex = null , qText = null;
-    static int me = 0;
-    static String[] aaa = {"hhh","jhsh","djhshjhd"};
-    static Scanner rfk = new Scanner(System.in);
-    public static void main (String[]args)
-    {
-        String[] badmus = qText.split("jkdjjd");
-        for ( int a = 0; a < badmus.length; a++)
-        {
-            System.out.println(badmus[a]);
-            rfk.next();
-        }
-    }
-    public static String readFile( )
+public class ReadDOC {
+	
+	private static String name , myfile="uoe2015.doc" ,qText;
+
+	public static String getFile()
     {
         qText = "\n";
         POIFSFileSystem toFileSource = null;
         try
         {
-            toFileSource = new POIFSFileSystem(new FileInputStream(dataSource));
+            toFileSource = new POIFSFileSystem(new FileInputStream(myfile));
             HWPFDocument fromDoc = new HWPFDocument(toFileSource);
             WordExtractor iWill = new WordExtractor(fromDoc);
             String[] paragraphs = iWill.getParagraphText();
@@ -42,5 +36,4 @@ public class App
         }
         return qText;
     }
-
 }

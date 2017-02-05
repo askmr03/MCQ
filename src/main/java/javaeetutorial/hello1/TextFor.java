@@ -13,8 +13,8 @@ public class TextFor
 	}
 	public TextFor ( String name, String password)
 	{
-		nameError = name;
-		passwordError = password;
+		nameError  =  name;
+		passwordError  =  password;
 	}
 	public String getNameError ()
 	{
@@ -23,7 +23,7 @@ public class TextFor
 	
 	public void setNameError(String nError)
 	{
-		this.nameError = nError;
+		this.nameError  =  nError;
 	}
 	
 }

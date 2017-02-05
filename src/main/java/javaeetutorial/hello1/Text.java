@@ -14,9 +14,9 @@ public class Text
 	}
 	public Text ( String defLogin , String defCreate , String defLoginM )
 	{
-		login = defLogin;
-		create = defCreate;
-		loginM = defLoginM;
+		login  =  defLogin;
+		create  =  defCreate;
+		loginM  =  defLoginM;
 	}
 	
 	public String getLogin()
