@@ -13,6 +13,12 @@
 <br><li> Task 3    : Web interface for the above task </li>
 <br>
 <ul> Solution : JAVA EE Technology comes in using FACELET, HTML and CORE, F:AJAX Tag libraries </ul>
+<center> <br> 1. User Login functionalities with defined Regex Patter <br> 
+<br> 2. Quiz Page with Number answered and unasnwered question <br> 
+<br> 2. Quiz Page with Used and Left time  <br> 
+
+<br> 3. Previous and Next botton <br> 
+
 ......
 <p align="center">
   <img src="https://github.com/badmusamuda/MCQ/blob/master/n.png" />
