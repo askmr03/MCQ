@@ -1,0 +1,28 @@
+<html lang="en"
+xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+<title> #{user.name} | ${app.name} </title>
+</h:head>
+
+<h:body>
+<center> <b> Question : Left = 20 Answered = 20  <br> Time : Left = 20 min Used = 20 min  #{mcq.readFile()}</br></b> </center>
+<center>
+					 <br> </br><br> </br>
+				<h:form>
+		<a>1. questio : ssjhajhasjhjhasjhasa jjhasjh qwiuiqwui qw </a>
+		<br> </br>
+				<h:selectOneRadio id="myRadio" >
+ <f:selectItem itemValue="Hi" itemLabel="Option D">  </f:selectItem> 
+  <f:selectItem itemValue="Hi" itemLabel="Option D">  </f:selectItem> 
+ <f:selectItem itemValue="Hi" itemLabel="Option D">  </f:selectItem> 
+ <f:selectItem itemValue="Hi" itemLabel="Option D">  </f:selectItem> 
+						</h:selectOneRadio>
+  <br> </br>
+<br> </br>
+  <br> <h:commandButton value="Previous" />  |  <h:commandButton value="Next" /></br>
+	 </h:form>
+ </center>
+</h:body>
+</html>

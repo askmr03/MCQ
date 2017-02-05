@@ -1,0 +1,9 @@
+package javaeetutorial.hello1;
+import javax.inject.Named;
+import javax.enterprise.context.RequestScoped;
+@Named
+@RequestScoped
+public class TextFor
+{
+
+}
